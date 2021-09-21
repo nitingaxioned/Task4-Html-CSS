@@ -239,9 +239,7 @@ nav li:nth-last-child(2){ margin-right: 12%; }
   font-weight: 100;
 }
 
-.nav-block>a{
-  margin-left: 1.1%;
-}
+.nav-block>a{ margin-left: 1.1%; }
 
 .search .Hide-me,
 .nav-block .Hide-me{ display: none; }
@@ -252,7 +250,7 @@ input:focus{
   outline: none;
 }
 
-header a:hover{ color: aqua;}
+header a:hover{ color: #5b48a4;}
 
 /*=================================
   Header styling ends here
@@ -261,14 +259,77 @@ header a:hover{ color: aqua;}
 /*=================================
   main styling starts here
 =================================*/
+.banner{ 
+  width: 100%; 
+  text-align: center; 
+}
 
+.mother-day-off{ 
+  color: #A6CCFF;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 16px 0;
+  font-family: Arial, sans-serif;
+ }
 
+ .mother-day-off::after{
+   content: " \f054";
+  font-family: FontAwesome;
+  font-size: 15px;
+  font-weight: 100;
+ }
 
+ .mother-day-off:hover{ color: #5b48a4; }
 
+ .banner-block{
+   background: no-repeat url("https://via.placeholder.com/1366x420");
+   position: relative;
+   padding: 209px 50%;
+ }
 
+ .banner-block a:hover{ background-color: #A6CCFF; }
 
+ .banner-block a{
+  text-transform: capitalize;
+  position: absolute;
+  left: 19.3%;
+  top: 334px;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #5b48a4;
+  font-weight: bold;
+  padding: 10px 16px;
+ }
+ 
+ .banner-bottom{
+   background-color: #f4f9fc;
+   padding: 40px 0;
+ }
 
+ .banner-bottom h4{
+   font-size: 28px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   padding-bottom: 16px;
+ }
 
+ .banner-bottom p{
+   font-size: 16px;
+   /* letter-spacing: 1px; */
+   padding-bottom: 5px;
+   font-weight: bold;
+ }
+
+ .banner-bottom a{
+   text-transform: uppercase;
+   font-size: 14px;
+   color: #ffffff;
+   padding-bottom:20px ;
+   padding-top: 20px;
+   width: 15.4%;
+   background-color: #f8a883;
+   margin: 24px 15px 8px;
+ }
 /*=================================
   main styling ends here
 =================================*/
