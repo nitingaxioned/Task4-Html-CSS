@@ -331,13 +331,15 @@ header a:hover{ color: #5b48a4;}
    margin: 24px 15px 8px;
  }
 
- .monthly-box{ 
+ .monthly-box,
+ .commitment{ 
   text-align: center; 
   width: 72.3%; 
   border-bottom: 2px solid #f8a883;
 }
 
-.monthly-box h3{
+.monthly-box h3,
+.commitment h3{
   font-size: 32px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -346,12 +348,14 @@ header a:hover{ color: #5b48a4;}
   padding-bottom: 43px;
 }
 
-.monthly-box>p{
+.monthly-box>p,
+.commitment>p{
   font-size: 18px;
   letter-spacing: 1px;
 }
 
-.month-box-list{
+.month-box-list,
+.commit-list{
   display: flex;
   justify-content: space-between;
   padding: 80px 0 55px;
@@ -363,7 +367,8 @@ header a:hover{ color: #5b48a4;}
   margin-bottom: 38px;
 }
 
-.monthly-box a{
+.monthly-box a,
+.commitment a{
   text-transform: uppercase;
   font-size: 15px;
   color: #000000;
@@ -375,7 +380,28 @@ header a:hover{ color: #5b48a4;}
   margin-bottom: 55px;
 }
 
+.commitment h3{
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
 
+.commit-list{ padding: 40px 0 20px; }
+.commit-list li{ width: 29%; }
+.commit-list figure img{ height: 140px; }
+.commitment a{ margin-bottom: 60px; }
+
+.commit-list h5{
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 22px;
+  padding: 12px 0;
+}
+
+.commit-list p{
+  font-size: 15px;
+  padding: 5px 0;
+  line-height: 1.5;
+}
 
 
 
