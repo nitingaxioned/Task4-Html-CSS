@@ -331,15 +331,17 @@ header a:hover{ color: #5b48a4;}
    margin: 24px 15px 8px;
  }
 
- .featured,
- .monthly-box,
- .favourite,
- .commitment{ 
+.review,
+.featured,
+.monthly-box,
+.favourite,
+.commitment{ 
   text-align: center; 
   width: 72.3%; 
   border-bottom: 2px solid #f8a883;
 }
 
+.review h3,
 .featured h3,
 .monthly-box h3,
 .favourite h3,
@@ -401,6 +403,7 @@ header a:hover{ color: #5b48a4;}
 .commit-list figure img{ height: 140px; }
 .commitment a{ margin-bottom: 60px; }
 .featured-list li{ width: 20%; }
+
 .commit-list h5{
   font-weight: bold;
   text-transform: capitalize;
@@ -424,6 +427,176 @@ header a:hover{ color: #5b48a4;}
 .favourite a{ margin-top: 35px; }
 .favourite h3{ padding: 60px 0 20px; }
 
+.review{ 
+  border-bottom:0px;
+  text-align: initial;
+  position: relative;
+  height: 495px;
+}
+
+.review h3{
+  padding-top: 60px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: none;
+}
+
+.review>div:first-child{
+  width: 25%;
+  display: inline-block;
+  text-align: center;
+}
+
+.aside-block{
+  width: 70%;
+  display: inline-block;
+  position: absolute;
+  top: 180px;
+  right: 0;
+}
+
+
+
+
+.footer{
+  background-color: #f6eddc;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 10px;
+  }
+
+.footer .wrapper{ 
+  width: 72.3%;
+  padding-top: 50px;
+ }
+
+.footer h4{
+  font-size: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-bottom: 28px;
+}
+
+.footer h4::after{
+  content: "";
+  box-sizing: border-box;
+  border: 4px solid #4d494f;
+  background-color: #4d494f;
+  font-size: 1px;
+  height: 5px;
+  width: 5px;
+  position: absolute;
+  transform: rotate(45deg) translate(11px, 5px);
+}
+
+.foot-list-1,
+.foot-list-2{
+  display: inline-flex;
+  flex-direction: column;
+  width: 26%;
+}
+
+.foot-list-1 a,
+.foot-list-1 li,
+.foot-list-2 a{
+  color: #4d494f;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.foot-list-1 a:hover,
+.foot-list-2 a:hover{ color: #5b48a4; }
+
+.foot-list-1 li,
+.foot-list-2 li{
+  padding-bottom: 28px;
+}
+
+.foot-list-1>li:last-child::before{
+  content: "🇮🇪 ";
+}
+
+.subscribe{
+  float: right;
+  width: 40%;
+}
+
+.subscribe>p:first-child{
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+
+}
+
+form{
+  position: relative;
+  width: 100%;
+}
+
+.form-group,
+.form-control{ display: inline-flex; }
+
+.form-group{width: 80%;}
+
+.form-group input{
+  border: 0px;
+  background-color: #ffffff;
+  padding: 20px 10px;
+}
+
+.form-control{
+  position: absolute;
+  right: 0;
+}
+
+.form-control input{
+  border: 0px;
+  width: 100%;
+  text-transform: uppercase;
+  background-color: #4d494f;
+  padding: 20px 20px;
+  color: #ffffff;
+}
+
+.form-group input::placeholder{ text-transform: uppercase; }
+.subscribe span.error{display: none;}
+
+.subscribe :nth-child(3){
+  background-color: #ffff00;
+  margin: 35px auto;
+  display: inline-block;
+}
+
+.subscribe :nth-child(4){
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.subscribe a{ color: #4d494f;}
+
+.subscribe span{
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+  width: 30%;
+  margin-top: 10px;
+}
+
+.subscribe>span:nth-of-type(1)::before{
+  content: "\f179";
+  font-family: FontAwesome;
+  font-size: 20px;
+  margin-right: 10%;
+}
+
+.subscribe>span:nth-of-type(2)::before{
+  content: "\f17b";
+  font-family: FontAwesome;
+  font-size: 20px;
+  margin-right: 10%;
+}
 
 /*=================================
   main styling ends here
@@ -432,11 +605,10 @@ header a:hover{ color: #5b48a4;}
 /*=================================
   footer styling starts here
 =================================*/ 
-
-
-
-
-
+footer.wrapper { 
+  background-color: #f6eddc; 
+  width: 100%;
+}
 
 
  /*=================================
