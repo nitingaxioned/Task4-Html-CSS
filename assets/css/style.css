@@ -543,6 +543,7 @@ form{
   border: 0px;
   background-color: #ffffff;
   padding: 20px 10px;
+  width: 260px;
 }
 
 .form-control{
@@ -610,7 +611,51 @@ footer.wrapper {
   width: 100%;
 }
 
+.footer-list{
+  width: 72.3%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-between;
+}
 
+.footer-list a{
+  color: #4d494f;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer-list a[title="Facebook"]::after{
+  content: "\f09a";
+  font-family: FontAwesome;
+  font-size: 20px;
+}
+
+.footer-list a[title="Twitter"]::after{
+  content: "\f099";
+  font-family: FontAwesome;
+  font-size: 20px;
+}
+
+.footer-list a[title="piret"]::after{
+  content: "\f0d2";
+  font-family: FontAwesome;
+  font-size: 20px;
+}
+
+.footer-list a[title="youtube"]::after{
+  content: "\f167";
+  font-family: FontAwesome;
+  font-size: 20px;
+}
+
+.footer-list a[title="Instagram"]::after{
+  content: "\f16d";
+  font-family: FontAwesome;
+  font-size: 20px;
+}
+
+.Hide-me{display: none;}
  /*=================================
   footer styling ends here
 =================================*/ 
