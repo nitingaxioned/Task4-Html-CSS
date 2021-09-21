@@ -331,6 +331,7 @@ header a:hover{ color: #5b48a4;}
    margin: 24px 15px 8px;
  }
 
+ .featured,
  .monthly-box,
  .favourite,
  .commitment{ 
@@ -339,6 +340,7 @@ header a:hover{ color: #5b48a4;}
   border-bottom: 2px solid #f8a883;
 }
 
+.featured h3,
 .monthly-box h3,
 .favourite h3,
 .commitment h3{
@@ -356,6 +358,7 @@ header a:hover{ color: #5b48a4;}
   letter-spacing: 1px;
 }
 
+.featured-list,
 .month-box-list,
 .fav-list,
 .commit-list{
@@ -372,6 +375,7 @@ header a:hover{ color: #5b48a4;}
 
 .monthly-box a,
 .favourite a,
+.featured a,
 .commitment a{
   text-transform: uppercase;
   font-size: 15px;
@@ -384,16 +388,19 @@ header a:hover{ color: #5b48a4;}
   margin-bottom: 55px;
 }
 
+.featured h3,
 .commitment h3{
   padding-top: 60px;
   padding-bottom: 20px;
 }
 
+.featured a{margin-top: 32px;}
+.featured-list{ padding: 20px 0 0px; }
 .commit-list{ padding: 40px 0 20px; }
 .commit-list li{ width: 29%; }
 .commit-list figure img{ height: 140px; }
 .commitment a{ margin-bottom: 60px; }
-
+.featured-list li{ width: 20%; }
 .commit-list h5{
   font-weight: bold;
   text-transform: capitalize;
@@ -413,6 +420,7 @@ header a:hover{ color: #5b48a4;}
   height: 300px;
 }
 .fav-list li{ margin: 0 1%; }
+.featured a,
 .favourite a{ margin-top: 35px; }
 .favourite h3{ padding: 60px 0 20px; }
 
