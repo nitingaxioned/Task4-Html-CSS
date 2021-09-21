@@ -332,6 +332,7 @@ header a:hover{ color: #5b48a4;}
  }
 
  .monthly-box,
+ .favourite,
  .commitment{ 
   text-align: center; 
   width: 72.3%; 
@@ -339,6 +340,7 @@ header a:hover{ color: #5b48a4;}
 }
 
 .monthly-box h3,
+.favourite h3,
 .commitment h3{
   font-size: 32px;
   font-weight: bold;
@@ -355,6 +357,7 @@ header a:hover{ color: #5b48a4;}
 }
 
 .month-box-list,
+.fav-list,
 .commit-list{
   display: flex;
   justify-content: space-between;
@@ -368,6 +371,7 @@ header a:hover{ color: #5b48a4;}
 }
 
 .monthly-box a,
+.favourite a,
 .commitment a{
   text-transform: uppercase;
   font-size: 15px;
@@ -403,9 +407,14 @@ header a:hover{ color: #5b48a4;}
   line-height: 1.5;
 }
 
-
-
-
+.fav-list{
+  align-items: flex-end;
+  padding: 40px 0 20px;
+  height: 300px;
+}
+.fav-list li{ margin: 0 1%; }
+.favourite a{ margin-top: 35px; }
+.favourite h3{ padding: 60px 0 20px; }
 
 
 /*=================================
