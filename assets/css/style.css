@@ -431,7 +431,6 @@ header a:hover{ color: #5b48a4;}
   border-bottom:0px;
   text-align: initial;
   position: relative;
-  height: 495px;
 }
 
 .review h3{
@@ -441,22 +440,115 @@ header a:hover{ color: #5b48a4;}
   text-transform: none;
 }
 
-.review>div:first-child{
-  width: 25%;
-  display: inline-block;
+.review a{
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #f8a883;
+  font-weight: bold;
+  padding-bottom:19px ;
+  padding-top: 19px;
+  width: 27.5%;
+  text-align: center;
+  margin: 60px 0 58px 50%;
+  transform: translate(-50%,0);
+}
+
+.review-block{
+  display: flex;
+  padding-top: 75px;
+  justify-content: space-between;
+}
+
+.review-block>div:first-child{
+  width: 22%;
+  display: inline-flex;
+  flex-direction: column;
   text-align: center;
 }
 
-.aside-block{
-  width: 70%;
-  display: inline-block;
-  position: absolute;
-  top: 180px;
-  right: 0;
+.review-block>div:first-child p{
+  font-size: 14px;
+  color: #cccccc;
 }
 
+.review-block>div:first-child h6{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px;
+}
 
+.review-block>div:first-child h6::before{
+  content: "\f00c";
+  background-color: #ffff00;
+  font-family: FontAwesome;
+}
 
+.review-block>div:first-child h6 span{ font-weight: lighter; }
+.review-block>div p span{ font-weight: bold; }
+
+.review-block h5{
+  font-size: 22px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.aside-block{
+  width: 65%;
+  display: flex;
+  position: relative;
+  right: 0;
+  margin-right: 5%;
+}
+aside{ margin-right: 2%; }
+
+aside h6{
+  font-weight: bold;
+  padding: 18px 0;
+  font-size: 14px;
+}
+
+aside span{
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 33px;
+  display: block;
+}
+
+aside p:first-child{
+  font-size: 12px;
+  color: #cccccc;
+  float: right;
+  margin: 0 5%;
+}
+
+aside p:nth-of-type(2){
+  font-size: 12px;
+  margin-right: 5%;
+}
+
+.aside-block::before{
+  content: "\f104";
+  position: absolute;
+  color: #eeeeee;
+  font-weight: bold;
+  font-family: FontAwesome;
+  font-size: 50px;
+  transform: translate(-70px,40px);
+}
+
+.aside-block::after{
+  content: "\f105";
+  position: absolute;
+  color: #eeeeee;
+  font-weight: bold;
+  font-family: FontAwesome;
+  font-size: 50px;
+  right: 0;
+  transform: translate(40px,35px);
+}
 
 .footer{
   background-color: #f6eddc;
