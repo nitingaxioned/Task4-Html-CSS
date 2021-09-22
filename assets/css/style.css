@@ -651,26 +651,15 @@ aside p:nth-of-type(2){
 
 .footer .wrapper{ 
   width: 72.3%;
-  padding-top: 50px;
+  padding-top: 48px;
  }
 
 .footer h4{
   font-size: 28px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding-bottom: 28px;
-}
-
-.footer h4::after{
-  content: "";
-  box-sizing: border-box;
-  border: 4px solid #4d494f;
-  background-color: #4d494f;
-  font-size: 1px;
-  height: 5px;
-  width: 5px;
-  position: absolute;
-  transform: rotate(45deg) translate(11px, 5px);
+  padding-bottom: 26px;
+  margin: 1px;
 }
 
 .foot-list-1,
@@ -684,17 +673,16 @@ aside p:nth-of-type(2){
 .foot-list-1 li,
 .foot-list-2 a{
   color: #4d494f;
-  font-size: 14px;
+  font-size: 13.5px;
   letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .foot-list-1 a:hover,
-.foot-list-2 a:hover{ color: #5b48a4; }
+.foot-list-2 a:hover{ color: #f8a883; }
 
-.foot-list-1 li,
-.foot-list-2 li{
-  padding-bottom: 28px;
-}
+.foot-list-1 li{ padding-bottom: 29.9px; }
+.foot-list-2 li{ padding-bottom: 28.5px; }
 
 .foot-list-1>li:last-child::before{
   content: "\2800\2800\2800";
@@ -708,15 +696,15 @@ aside p:nth-of-type(2){
 .subscribe{
   float: right;
   width: 40%;
+  color: #4d494f;
 }
 
 .subscribe>p:first-child{
-  font-size: 15px;
+  font-size: 14.5px;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  padding-bottom: 10px;
-
+  padding-bottom: 12px;
 }
 
 form{
@@ -731,9 +719,11 @@ form{
 
 .form-group input{
   border: 0px;
+  font-size: 11px;
+  letter-spacing: 1.8px;
   background-color: #ffffff;
-  padding: 20px 10px;
-  width: 260px;
+  padding: 23px 12px;
+  width: 240px;
 }
 
 .form-control{
@@ -746,10 +736,12 @@ form{
   width: 100%;
   text-transform: uppercase;
   background-color: #4d494f;
-  padding: 20px 20px;
+  padding: 21.5px 20px;
+  letter-spacing: 0.4px;
   color: #ffffff;
 }
 
+.form-control input:hover{ background-color: #f8a883; }
 .form-group input::placeholder{ text-transform: uppercase; }
 .subscribe span.error{display: none;}
 
@@ -788,10 +780,10 @@ form{
   font-size: 20px;
   margin-right: 10%;
 }
-.footer a:hover{
-  color: #000000;
-  font-weight: bold;
-}
+
+.subscribe>span:nth-of-type(2):hover::before,
+.subscribe>span:nth-of-type(1):hover::before,
+.footer a:hover{ color: #000000; }
 /*=================================
   main styling ends here
 =================================*/
@@ -807,52 +799,77 @@ footer.wrapper {
 .footer-list{
   width: 72.3%;
   margin: auto;
-  padding: 35px 0;
+  padding: 36px 0;
   display: flex;
   justify-content: space-between;
 }
 
 .footer-list a{
   color: #4d494f;
-  font-size: 14px;
+  font-size: 14.5px;
   font-weight: bold;
+}
+
+.footer-list a[title="Instagram"],
+.footer-list a[title="youtube"],
+.footer-list a[title="piret"],
+.footer-list a[title="Twitter"],
+.footer-list a[title="Facebook"]{
+  text-indent: -9999px;
+  position: relative;
 }
 
 .footer-list a[title="Facebook"]::after{
   content: "\f09a";
   font-family: FontAwesome;
   font-size: 20px;
+  text-indent: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .footer-list a[title="Twitter"]::after{
   content: "\f099";
   font-family: FontAwesome;
   font-size: 20px;
+  text-indent: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .footer-list a[title="piret"]::after{
   content: "\f0d2";
   font-family: FontAwesome;
   font-size: 20px;
+  text-indent: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .footer-list a[title="youtube"]::after{
   content: "\f167";
   font-family: FontAwesome;
   font-size: 20px;
+  text-indent: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .footer-list a[title="Instagram"]::after{
   content: "\f16d";
   font-family: FontAwesome;
   font-size: 20px;
+  text-indent: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-footer a:hover{
-  color: #000000;
-}
-
-.Hide-me{display: none;}
+footer a:hover{ color: #000000; }
  /*=================================
   footer styling ends here
 =================================*/ 
