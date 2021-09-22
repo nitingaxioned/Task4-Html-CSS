@@ -504,6 +504,18 @@ header a:hover{ color: #5b48a4;}
   padding-bottom: 40px;
 }
 
+.review-block h5::after{
+  content: "";
+  box-sizing: border-box;
+  width: 140px;
+  height: 25px;
+  background-image: url("https://via.placeholder.com/100");
+  background-size: cover;
+  position: absolute;
+  top: 30px;
+  left: 35px;
+}
+
 .aside-block{
   width: 65%;
   display: flex;
@@ -511,18 +523,35 @@ header a:hover{ color: #5b48a4;}
   right: 0;
   margin-right: 5%;
 }
-aside{ margin-right: 2%; }
+aside:first-child{ 
+  margin-right: 2%;
+  position: relative;
+  left: -10px;
+}
 
 aside h6{
   font-weight: bold;
-  padding: 18px 0;
+  padding: 20px 0;
+  position: relative;
   font-size: 14px;
+}
+
+aside h6::after{
+  content: "";
+  box-sizing: border-box;
+  width: 85px;
+  height: 15px;
+  background-image: url("https://via.placeholder.com/100");
+  background-size: cover;
+  position: absolute;
+  left : 0;
+  top: 0px;
 }
 
 aside span{
   font-size: 10px;
   font-weight: bold;
-  margin-top: 33px;
+  margin-top: 23px;
   display: block;
 }
 
