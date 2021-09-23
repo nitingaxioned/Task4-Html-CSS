@@ -768,7 +768,7 @@ form{
 .form-group,
 .form-control{ display: inline-flex; }
 
-.form-group{width: 80%;}
+.form-group{width: 61%;}
 
 .form-group input{
   border: 0px;
@@ -776,12 +776,13 @@ form{
   letter-spacing: 1.8px;
   background-color: #ffffff;
   padding: 23px 12px;
-  width: 240px;
+  width: 100%;
 }
 
 .form-control{
   position: absolute;
   right: 0;
+  width: 40%;
 }
 
 .form-control input{
@@ -928,9 +929,184 @@ footer a:hover{ color: #000000; }
 =================================*/ 
 
 /*media query starts*/
+/*media query for 1280px starts here*/
+@media only screen and (max-width: 1280px) {
+
+  .nav-block{ width: 95%;}
+  .search{ float: right; }
+  .subscribe span{ width: 40%; }
+}  
+
+/*media query for 1024px starts here*/
+@media only screen and (max-width: 1024px) {
+  .search input{ display: none;}
+  .search{ 
+    background-color: transparent;
+    border: 0px;
+    position: absolute;
+    right: 8%;
+  }
+  nav{ width: 70%;}
+  .nav-block>a{ right: 0%; }
+}  
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+  nav{ width: 60%;}
+  .nav-block>a{ right: -6%; }
+  .pre-nav,
+  .nav-block,
+  .footer-list,
+  .footer .wrapper,
+  .review,
+  .featured,
+  .monthly-box,
+  .favourite,
+  .commitment{ width: 98%; }
+}  
 
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+  .nav-ul li{ margin-right: 5%; }
+  .nav-ul li:nth-last-child(2){ margin-right: 5%; }
+  .nav-block>a{ right: 10%; }
+  .search{ right: 0%; }
 
+  .banner-bottom a{ 
+    display: block; 
+    margin: 10px auto;
+    width: 30%;
+  }
 
 }  
+
+/*media query for 720px starts here*/
+@media only screen and (max-width: 720px) {
+  .nav-ul{ display: none;}
+  .nav-block>a{ display: none; }
+  .footer h4,
+  h1{ 
+    margin-left: 50vw;
+    margin-right: 0;
+    transform: translateX(-50%);
+   }
+
+   h4 img,
+   h1 img{ width: 180px; }
+
+   .banner-bottom p{ margin: 20px 10%; }
+
+   .month-box-list li{ 
+      margin-bottom: 25px;
+      width: 70%;
+    }
+
+   .commit-list li{ 
+     width: 65%;
+     margin-top: 10px;
+    }
+
+   .favourite a{ width: 40%;}
+   .fav-list{ 
+      width: 70%;
+      margin: 50px auto auto auto;
+      height: 50px;
+    }
+
+    .featured-list li{
+       margin: 10px;
+       width: 70%;
+    }
+
+    .review-block div{ 
+      transform: translateX(0); 
+      margin-bottom: 20px;
+    }
+
+    .review-block h6{ transform: translateX(-3%); }
+    .great-stars li{ margin: 0 15px; }
+    .great-stars { transform: translateX(-10px); }
+    .slide{ width: 60%;}
+    .slide:first-of-type{ display: none;}
+
+    .nav-ul,
+    .month-box-list,
+    .commit-list,
+    .featured-list,
+    .review-block,
+    .slider{ 
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .form-control input{
+      padding-top: 13px;
+      padding-bottom: 13px;
+      }
+
+    .form-group input{
+      padding-top: 15.5px;
+      padding-bottom: 15.5px;
+      }
+    .footer-list{ 
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+     }
+    .footer-list li:nth-child(1),
+    .footer-list li:nth-child(2),
+    .footer-list li:nth-child(3),
+    .footer-list li:nth-child(4){
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+
+    .foot-list-1,
+    .foot-list-2{
+      display: inline-flex;
+      flex-direction: column;
+      width: 45%;
+      margin-left: 0;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .subscribe{
+      float: none;
+      width: 80%;
+      margin: 20px auto 0;
+    }
+    .footer-list li{ margin: 5px;}
+    .nav-block{position: relative;}
+
+    .nav-block::before{
+      content: "\f039";
+      font-family: FontAwesome;
+      font-size: 22px;
+      color: #4d494f;
+      text-indent: 1px;
+      position: absolute;
+      top: 23px;
+      left: 10px;
+    }
+  }  
+
+/*media query for 540px starts here*/
+@media only screen and (max-width: 540px) {
+  .banner-bottom a,
+  .monthly-box a,
+  .favourite a,
+  .featured a,
+  .review>a,
+  .commitment a{ width: 50%;}
+  .pre-nav li{ padding: 10.5px 0 8px 5px; }
+  .pre-nav { font-size: 8px; }
+  .foot-list-1,
+  .foot-list-2{ width: 100%; }
+
+  
+  .subscribe span{ 
+    display: block;
+    width: 80%; 
+  }
+  }  
