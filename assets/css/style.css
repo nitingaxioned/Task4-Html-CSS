@@ -177,6 +177,7 @@ nav{
   font-family: FontAwesome;
   font-weight: 500;
   font-size: 10px;
+  color: #4f4b4c;
   position: relative;
   top: -2px;
   left: 5px;
@@ -336,7 +337,6 @@ header a:hover{ color: #aaaaaa}
 
  .banner-bottom p{
    font-size: 16px;
-   /* letter-spacing: 1px; */
    padding-bottom: 5px;
    font-weight: bold;
  }
@@ -935,6 +935,16 @@ footer a:hover{ color: #000000; }
   .nav-block{ width: 95%;}
   .search{ float: right; }
   .subscribe span{ width: 40%; }
+  .footer-list{ justify-content: space-around; }
+  .banner-block{ 
+    background-size: 100%;
+    padding: 14vw 50%;
+  }
+
+  .banner-block a{
+    top: 20vw;
+    font-size: 20px;
+   }
 }  
 
 /*media query for 1024px starts here*/
@@ -948,6 +958,45 @@ footer a:hover{ color: #000000; }
   }
   nav{ width: 70%;}
   .nav-block>a{ right: 0%; }
+
+  .nav-ul>li:first-child:hover:after{ color: #4f4b4c; }
+  .nav-ul> li:first-child:hover .dropdwn {z-index: -2;}
+  .search a:hover:after,
+  .nav-block>a:hover:after{ color: #cccccc; }
+  header a:hover{ color: #4f4b4c}
+  .mother-day-off:hover{ color: #A6CCFF; }
+  .banner-block a:hover{ background-color: #5b48a4; }
+
+  .review>a:hover,
+  .banner-bottom a:hover{ 
+    background-color: #f8a883;
+    color: #ffffff;
+    border: 1px solid #f8a883;
+  }
+
+  .featured a:hover,
+  .favourite a:hover,
+  .commitment a:hover,
+  .monthly-box a:hover{ 
+    background-color: transparent;
+    border: 1px solid #4f4b4c;
+    color: #4f4b4c; 
+  }
+
+  .slider a:hover::after{ color: #f5f0f6; }
+  .foot-list-1 a:hover,
+  .foot-list-2 a:hover{ color: #4f4b4c; }
+  .subscribe>span:nth-of-type(2):hover::before,
+  .subscribe>span:nth-of-type(1):hover::before,
+  .footer a:hover{ color: #4f4b4c; }
+  footer a:hover{ color: #4f4b4c; }
+  .form-control input:hover{ background-color: #4f4b4c; }
+
+  .form-control input{
+    letter-spacing: 0;
+    padding: 21.7px 4%;
+  }
+
 }  
 
 /*media query for 995px starts here*/
@@ -982,10 +1031,9 @@ footer a:hover{ color: #000000; }
 
 /*media query for 720px starts here*/
 @media only screen and (max-width: 720px) {
-  .nav-ul{ display: none;}
-  .nav-block>a{ display: none; }
-  .footer h4,
-  h1{ 
+  
+    .footer h4,
+    h1{ 
     margin-left: 50vw;
     margin-right: 0;
     transform: translateX(-50%);
@@ -993,8 +1041,12 @@ footer a:hover{ color: #000000; }
 
    h4 img,
    h1 img{ width: 180px; }
-
    .banner-bottom p{ margin: 20px 10%; }
+
+   .banner-block a{
+    top: 18vw;
+    font-size: 15px;
+   }
 
    .month-box-list li{ 
       margin-bottom: 25px;
@@ -1078,8 +1130,7 @@ footer a:hover{ color: #000000; }
     }
     .footer-list li{ margin: 5px;}
     .nav-block{position: relative;}
-
-    .nav-block::before{
+    nav::before{
       content: "\f039";
       font-family: FontAwesome;
       font-size: 22px;
@@ -1087,8 +1138,73 @@ footer a:hover{ color: #000000; }
       text-indent: 1px;
       position: absolute;
       top: 23px;
-      left: 10px;
+      right: 10px;
     }
+
+  .nav-ul{ 
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f4f9fc;
+    position: fixed;
+    top:0;
+    z-index: 1;
+    left: 0;
+  }
+
+  .nav-ul li{ margin-right: 0; }
+  .nav-ul li:last-child{ margin-right: 0; }
+  .nav-ul li:nth-last-child(2){ margin-right: 0; }
+  .nav-ul{ padding-top: 40vh; }
+  .nav-ul li{  margin-bottom: 20px; }
+
+  .nav-ul::after{
+    content: "\f061";
+    font-family: FontAwesome;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    font-size: 25px;
+    color: #cccccc;
+    z-index: 2;
+  }
+
+  .dropdwn{ display: none; }
+
+  .nav-block>a{ 
+    position: fixed;
+    left: 5px;
+    top: 25px;
+    z-index: 2;
+   }
+
+   
+   .search{ 
+     position: fixed;
+     z-index: 2;
+     left: 50%;
+     transform: translateX(-50%);
+     top: 20vh;
+     background:#ffffff;
+     width: 70%;
+     max-width: 100%;
+    }
+
+    .search input{
+      display: inline-block;
+      width: 75%;
+    }
+
+    .search a{
+      transform: translateX(0);
+      position: relative;
+      right: -5%;
+    }
+
+    .search a::after{ right: -10% ; }
+    .nav-block.wrapper .menu{ display: none; }
+    
   }  
 
 /*media query for 540px starts here*/
@@ -1103,8 +1219,15 @@ footer a:hover{ color: #000000; }
   .pre-nav { font-size: 8px; }
   .foot-list-1,
   .foot-list-2{ width: 100%; }
-
+  .mother-day-off{ font-size: 10px; }
+  .mother-day-off::after{ font-size: 10px; }
+  .search a{ right: 0; }
   
+  .banner-block a{
+    top: 15vw;
+    font-size: 12px;
+   }
+
   .subscribe span{ 
     display: block;
     width: 80%; 
